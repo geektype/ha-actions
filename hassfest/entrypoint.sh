@@ -12,6 +12,7 @@ if [[ ${#integrations[@]} -eq 0 ]]; then
     bashio::exit.nok "No integrations found!"
 fi
 
+echo "printing integrations"
 for integration in "${integrations[@]}"; do
     echo "$integration"
 done
