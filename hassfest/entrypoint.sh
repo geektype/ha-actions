@@ -12,4 +12,9 @@ if [[ ${#integrations[@]} -eq 0 ]]; then
     bashio::exit.nok "No integrations found!"
 fi
 
+for integration in "${integrations[@]}"; do
+    echo "$integration"
+done
+
+
 exec python3 -m script.hassfest --action validate "${integrations[@]}"
