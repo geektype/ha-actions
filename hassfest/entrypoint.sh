@@ -18,4 +18,4 @@ for integration in "${integrations[@]}"; do
 done
 
 
-# exec python3 -m script.hassfest --action validate "${integrations[@]}"
+exec python3 -m script.hassfest --action validate "${integrations[@]}"
